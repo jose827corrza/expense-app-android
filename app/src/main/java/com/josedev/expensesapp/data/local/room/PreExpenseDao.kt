@@ -16,4 +16,7 @@ interface PreExpenseDao {
 
     @Query("DELETE FROM pre_expenses WHERE id = :id")
     suspend fun deletePreExpense(id: String)
+
+    @Query("UPDATE pre_orders SET isSent = :isSent WHERE id = :preOrderId")
+    suspend fun updateIsSent(preOrderId: Long, isSent: Boolean)
 }
