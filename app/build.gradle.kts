@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.hilt.gradle)
     alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.kotlin.realm)
 }
 
 android {
@@ -76,4 +77,7 @@ dependencies {
     implementation(libs.androidx.room.ktx)
     annotationProcessor(libs.androidx.room.compiler)
     kapt(libs.androidx.room.compiler)
+
+    //Realm
+    implementation(libs.realm.kotlin)
 }
