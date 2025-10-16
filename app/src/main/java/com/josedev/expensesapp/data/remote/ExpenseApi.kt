@@ -1,6 +1,5 @@
-package com.josedev.expensesapp.data
+package com.josedev.expensesapp.data.remote
 
-import androidx.annotation.Px
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.POST
