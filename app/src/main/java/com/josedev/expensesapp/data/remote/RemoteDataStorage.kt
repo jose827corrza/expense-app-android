@@ -1,5 +1,6 @@
 package com.josedev.expensesapp.data.remote
 
+import com.josedev.expensesapp.data.ExpenseApi
 import jakarta.inject.Inject
 
 class RemoteDataStorage @Inject constructor(
@@ -16,7 +17,7 @@ class RemoteDataStorage @Inject constructor(
         }
     }
 
-    suspend fun saveExpense() = runCatching {
+    suspend fun savePreExpense() = runCatching {
         val response = expenseApi.saveExpense()
 
         if (response.isSuccessful){

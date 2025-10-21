@@ -1,4 +1,4 @@
-package com.josedev.expensesapp.data.remote
+package com.josedev.expensesapp.data
 
 import com.squareup.moshi.JsonClass
 

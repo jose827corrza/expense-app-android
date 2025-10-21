@@ -12,7 +12,7 @@ interface ExpenseDao {
     suspend fun insertExpense(expensesEntity: List<ExpenseEntity>)
 
     @Query("SELECT * FROM expenses")
-    suspend fun getExpenses(): Flow<List<ExpenseEntity>>
+    fun getExpenses(): Flow<List<ExpenseEntity>>
 
     @Query("SELECT * FROM expenses WHERE id = :id")
     suspend fun getExpense(id: String): ExpenseEntity

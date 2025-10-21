@@ -1,6 +1,6 @@
-package com.josedev.expensesapp.di
+package com.josedev.expensesapp.data.di
 
-import com.josedev.expensesapp.data.remote.ExpenseApi
+import com.josedev.expensesapp.data.ExpenseApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -1,4 +1,4 @@
-package com.josedev.expensesapp.data.remote
+package com.josedev.expensesapp.data
 
 import retrofit2.Response
 import retrofit2.http.GET

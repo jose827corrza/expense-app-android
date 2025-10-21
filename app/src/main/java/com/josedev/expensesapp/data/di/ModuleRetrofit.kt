@@ -1,4 +1,4 @@
-package com.josedev.expensesapp.di
+package com.josedev.expensesapp.data.di
 
 import com.josedev.expensesapp.utilities.Constants
 import dagger.Module
