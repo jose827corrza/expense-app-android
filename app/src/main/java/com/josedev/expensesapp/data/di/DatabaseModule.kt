@@ -1,4 +1,4 @@
-package com.josedev.expensesapp.di
+package com.josedev.expensesapp.data.di
 
 import android.app.Application
 import androidx.room.Room

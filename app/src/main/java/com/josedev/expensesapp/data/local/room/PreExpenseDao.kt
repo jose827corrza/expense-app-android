@@ -15,7 +15,7 @@ interface PreExpenseDao {
     fun getPreExpenses(): Flow<List<PreExpenseEntity>>
 
     @Query("DELETE FROM pre_expenses WHERE id = :id")
-    suspend fun deletePreExpense(id: String)
+    suspend fun deletePreExpense(id: Long)
 
     @Query("UPDATE pre_orders SET isSent = :isSent WHERE id = :preOrderId")
     suspend fun updateIsSent(preOrderId: Long, isSent: Boolean)
